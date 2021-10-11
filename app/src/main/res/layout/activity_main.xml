@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/photo_1584616163483_78464ba7ff10" />
+
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="280dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Location 101"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="265dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Lattitude:"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headerTextView" />
+
+    <TextView
+        android:id="@+id/lonTextView"
+        android:layout_width="263dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Longitude"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/latTextView" />
+
+    <TextView
+        android:id="@+id/accTextView"
+        android:layout_width="281dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Accuracy"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altTextView" />
+
+    <TextView
+        android:id="@+id/addTextView"
+        android:layout_width="281dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Address"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accTextView" />
+
+    <TextView
+        android:id="@+id/altTextView"
+        android:layout_width="279dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Altitude"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/lonTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
